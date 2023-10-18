@@ -1,0 +1,117 @@
+section.top {
+    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    padding-bottom: 60px;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+}
+
+.wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+div.services {
+    display: inline-block;
+    font-size: 0;
+
+    svg {
+        width: 12px;
+        height: 12px;
+        margin-left: 2px;
+        margin-bottom: -1px;
+    }
+}
+
+.services a:hover {
+    color: red;
+}
+
+div.services a {
+    color: #24A3FF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0;
+}
+
+div.services a:hover svg path {
+    stroke: #F0145A;
+  }
+
+h2 {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+div.block h3 {
+    color: #24A3FF;
+    font-family: Montserrat;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 15px;
+
+}
+
+div.block p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
+
+
+.block {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+div.icon {
+    background-color: #FFF;
+    border-radius: 24px;
+    padding: 14px;
+    display: inline-block;
+}
+
+img.icon-pic {
+    width: 64px;
+    height: 64px;
+}
+
+.top::before {
+    position: absolute;
+    content: "";
+    background-color: #E7E7F2;
+    height: 10px;
+    display: block;
+    border-radius: 0 0 12px 12px;
+    right: 40px;
+    left: 40px;
+    top: calc(100% + 10px);
+}
+
+.top::after {
+    position: absolute;
+    content: "";
+    background-color: #CACADB;
+    height: 10px;
+    display: block;
+    border-radius: 0 0 12px 12px;
+    right: 20px;
+    left: 20px;
+    top: calc(100%);
+}

@@ -1,0 +1,100 @@
+section.articles {
+    background: #F5F5FA;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+div.publications {
+    font-size: 0;
+
+    a {
+        color: #24A3FF;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-right: 3;
+    }
+
+    svg {
+        width: 12px;
+        height: 12px;
+        margin-left: 2px;
+        margin-bottom: -1px;
+    }
+    a:hover svg path {
+    stroke: #F0145A;
+  }
+    a:hover {
+        color: #F0145A;
+    }
+}
+
+h2.pub {
+    margin-top: 10px;
+}
+
+div.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+div.card {
+    font-size: 0;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+    
+    img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+        
+    }
+}
+
+div.info > * {
+    margin-bottom: 15px;
+}
+div.info {
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: #24A3FF;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 0;
+        text-decoration: none;
+    }
+
+    time {
+        color: #B3B3BA;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    div.divider {
+        margin-top: 15px;
+        border-top: 4px solid #E6E6F0;
+    }
+    p {
+        color: #000;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+        margin: 0;
+
+    }
+}

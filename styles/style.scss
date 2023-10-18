@@ -1,0 +1,125 @@
+@import './normalize.scss';
+@import './section-top';
+@import './team';
+@import './clients';
+@import './articles';
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../fonts/Montserrat);
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+ body {
+    font-family: 'Montserrat',sans-serif;
+ }
+
+ @media (min-width: 768px) {
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .blocks {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 60px;
+    }
+
+    .block {
+        width: calc(50% - 30px);
+        margin: 0;
+    }
+
+    .clients {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .client {
+        width: 33.33%;
+    }
+
+    .client:nth-child(n + 7) {
+        display: flex;
+    }
+
+    div.cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .card:last-child {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (min-width: 1024px) {
+    .wrapper {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .block {
+        width: calc(33% - 60px);
+    }
+
+    .client {
+        width: 25%;
+    }
+    div.cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card:last-child {
+        grid-column: auto / auto;
+    }
+    div.member {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        img {
+            height: 528px;
+        }
+    }
+
+}
+
+@media (min-width: 1920px) {
+    .wrapper {
+        padding-left: 160px;
+        padding-right: 160px;
+    }
+
+    .wrapper-clients {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .client:nth-child(1) {
+        border-radius: 12px 0 0 0;
+    }
+
+    .client:nth-child(4) {
+        border-radius: 0 12px 0 0;
+    }
+
+    .client:nth-child(9) {
+        border-radius: 0 0 0 12px;
+    }
+
+    .client:nth-child(12) {
+        border-radius: 0 0 12px 0;
+    }
+
+    div.member {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        img {
+            height: 298px;
+        }
+    }
+
+}
