@@ -422,18 +422,27 @@ img.icon-pic {
 }
 
 div.member {
+  display: grid;
+  grid-template-rows: 500px 1fr;
   overflow: hidden;
   border-radius: 12px;
   margin-top: 80px;
   font-size: 0;
   background-color: #F5F5FA;
 }
+
+div.member div.img-container {
+  height: 0;
+  min-height: 100%;
+}
+
 div.member img {
   width: 100%;
-  height: 500px;
+  height: 100%;
   object-fit: cover;
 }
-div.member a {
+
+a {
   color: #24A3FF;
   font-family: Montserrat;
   font-size: 14px;
@@ -442,13 +451,16 @@ div.member a {
   text-transform: uppercase;
   text-decoration: none;
 }
-div.member svg {
+
+svg {
   margin-bottom: -1px;
 }
-div.member a:hover svg path {
+
+a:hover svg path {
   stroke: #F0145A;
 }
-div.member a:hover {
+
+a:hover {
   color: #F0145A;
 }
 
@@ -766,6 +778,11 @@ body {
   .card:last-child {
     grid-column: 1/-1;
   }
+  div.member {
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 @media (min-width: 1024px) {
   .wrapper {
@@ -783,13 +800,6 @@ body {
   }
   .card:last-child {
     grid-column: auto/auto;
-  }
-  div.member {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-  }
-  div.member img {
-    height: 528px;
   }
 }
 @media (min-width: 1920px) {
@@ -812,13 +822,6 @@ body {
   }
   .client:nth-child(12) {
     border-radius: 0 0 12px 0;
-  }
-  div.member {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-  }
-  div.member img {
-    height: 298px;
   }
 }
 

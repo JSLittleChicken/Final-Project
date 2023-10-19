@@ -3,6 +3,7 @@
 @import './team';
 @import './clients';
 @import './articles';
+@import './header';
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat);
@@ -56,6 +57,12 @@
     .card:last-child {
         grid-column: 1 / -1;
     }
+
+    div.member {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: 1fr;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -77,13 +84,7 @@
     .card:last-child {
         grid-column: auto / auto;
     }
-    div.member {
-        display: grid;
-        grid-template-columns: 400px 1fr;
-        img {
-            height: 528px;
-        }
-    }
+   
 
 }
 
@@ -112,14 +113,6 @@
 
     .client:nth-child(12) {
         border-radius: 0 0 12px 0;
-    }
-
-    div.member {
-        display: grid;
-        grid-template-columns: 400px 1fr;
-        img {
-            height: 298px;
-        }
     }
 
 }
