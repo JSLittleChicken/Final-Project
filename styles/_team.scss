@@ -17,9 +17,8 @@ div.member img {
     height: 100%;
     object-fit: cover;
 }
-a {
+/*a {
     color: #24A3FF;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -34,14 +33,13 @@ a:hover svg path {
 }
 a:hover {
     color: #F0145A;
-}
+}*/
 
 div.team-info {
     margin: 0;
     padding: 30px;
     p.team-member {
         color: #B3B3BA;
-        font-family: Montserrat;
         font-size: 16px;
         font-weight: 700;
         margin-top: 30px;
@@ -49,7 +47,6 @@ div.team-info {
         }
     p.post {
         color: #B3B3BA;
-        font-family: Montserrat;
         font-size: 14px;
         font-weight: 400;
         line-height: 22px; 

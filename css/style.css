@@ -319,24 +319,23 @@ section.top {
   padding-right: 30px;
 }
 
-div.services {
+div.general {
   display: inline-block;
   font-size: 0;
 }
-div.services svg {
+div.general svg {
   width: 12px;
   height: 12px;
   margin-left: 2px;
   margin-bottom: -1px;
 }
 
-.services a:hover {
+.general a:hover {
   color: red;
 }
 
-div.services a {
+div.general a {
   color: #24A3FF;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -345,12 +344,11 @@ div.services a {
   padding: 0;
 }
 
-div.services a:hover svg path {
+div.general a:hover svg path {
   stroke: #F0145A;
 }
 
 h2 {
-  font-family: Montserrat;
   font-size: 30px;
   font-weight: 700;
   background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
@@ -362,7 +360,6 @@ h2 {
 
 div.block h3 {
   color: #24A3FF;
-  font-family: Montserrat;
   font-size: 22px;
   font-weight: 700;
   margin-top: 30px;
@@ -371,7 +368,6 @@ div.block h3 {
 
 div.block p {
   color: #FFF;
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -442,35 +438,29 @@ div.member img {
   object-fit: cover;
 }
 
-a {
-  color: #24A3FF;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
+/*a {
+    color: #24A3FF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
 }
-
 svg {
-  margin-bottom: -1px;
+    margin-bottom: -1px;
 }
-
 a:hover svg path {
-  stroke: #F0145A;
+    stroke: #F0145A;
 }
-
 a:hover {
-  color: #F0145A;
-}
-
+    color: #F0145A;
+}*/
 div.team-info {
   margin: 0;
   padding: 30px;
 }
 div.team-info p.team-member {
   color: #B3B3BA;
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 700;
   margin-top: 30px;
@@ -478,7 +468,6 @@ div.team-info p.team-member {
 }
 div.team-info p.post {
   color: #B3B3BA;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
@@ -518,7 +507,6 @@ span {
 
 p.slogan {
   color: #323264;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -645,32 +633,32 @@ section.articles {
   padding-bottom: 30px;
 }
 
-div.publications {
-  font-size: 0;
-}
-div.publications a {
-  color: #24A3FF;
-  font-family: Montserrat;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin-right: 3;
-}
-div.publications svg {
-  width: 12px;
-  height: 12px;
-  margin-left: 2px;
-  margin-bottom: -1px;
-}
-div.publications a:hover svg path {
-  stroke: #F0145A;
-}
-div.publications a:hover {
-  color: #F0145A;
-}
+/*div.publications {
+    font-size: 0;
 
+    a {
+        color: #24A3FF;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-right: 3;
+    }
+
+    svg {
+        width: 12px;
+        height: 12px;
+        margin-left: 2px;
+        margin-bottom: -1px;
+    }
+    a:hover svg path {
+    stroke: #F0145A;
+  }
+    a:hover {
+        color: #F0145A;
+    }
+}*/
 h2.pub {
   margin-top: 10px;
 }
@@ -706,7 +694,6 @@ div.info {
 }
 div.info a {
   color: #24A3FF;
-  font-family: Montserrat;
   font-size: 16px;
   font-weight: 700;
   margin-top: 0;
@@ -714,7 +701,6 @@ div.info a {
 }
 div.info time {
   color: #B3B3BA;
-  font-family: Montserrat;
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -726,7 +712,6 @@ div.info div.divider {
 }
 div.info p {
   color: #000;
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;

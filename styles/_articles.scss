@@ -4,12 +4,11 @@ section.articles {
     padding-bottom: 30px;
 }
 
-div.publications {
+/*div.publications {
     font-size: 0;
 
     a {
         color: #24A3FF;
-        font-family: Montserrat;
         font-size: 14px;
         font-weight: 700;
         letter-spacing: 1px;
@@ -30,7 +29,7 @@ div.publications {
     a:hover {
         color: #F0145A;
     }
-}
+}*/
 
 h2.pub {
     margin-top: 10px;
@@ -69,7 +68,6 @@ div.info {
 
     a {
         color: #24A3FF;
-        font-family: Montserrat;
         font-size: 16px;
         font-weight: 700;
         margin-top: 0;
@@ -78,7 +76,6 @@ div.info {
 
     time {
         color: #B3B3BA;
-        font-family: Montserrat;
         font-size: 12px;
         font-weight: 700;
         letter-spacing: 1px;
@@ -90,7 +87,6 @@ div.info {
     }
     p {
         color: #000;
-        font-family: Montserrat;
         font-size: 14px;
         font-weight: 400;
         line-height: 22px;

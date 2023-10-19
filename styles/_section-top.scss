@@ -10,7 +10,7 @@ section.top {
     padding-right: 30px;
 }
 
-div.services {
+div.general {
     display: inline-block;
     font-size: 0;
 
@@ -22,13 +22,12 @@ div.services {
     }
 }
 
-.services a:hover {
+.general a:hover {
     color: red;
 }
 
-div.services a {
+div.general a {
     color: #24A3FF;
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -37,12 +36,11 @@ div.services a {
     padding: 0;
 }
 
-div.services a:hover svg path {
+div.general a:hover svg path {
     stroke: #F0145A;
   }
 
 h2 {
-    font-family: Montserrat;
     font-size: 30px;
     font-weight: 700;
     background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
@@ -54,7 +52,6 @@ h2 {
 
 div.block h3 {
     color: #24A3FF;
-    font-family: Montserrat;
     font-size: 22px;
     font-weight: 700;
     margin-top: 30px;
@@ -64,7 +61,6 @@ div.block h3 {
 
 div.block p {
     color: #FFF;
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
