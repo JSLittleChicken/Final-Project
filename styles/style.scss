@@ -4,6 +4,7 @@
 @import './clients';
 @import './articles';
 @import './header';
+
 @font-face {
     font-family: 'Montserrat';
     src: url(../fonts/Montserrat);
@@ -14,11 +15,47 @@
 * {
     box-sizing: border-box;
 }
- body {
-    font-family: 'Montserrat',sans-serif;
- }
 
- @media (min-width: 768px) {
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.background {
+    background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    padding-bottom: 60px;
+    position: relative;
+}
+
+div.background::before {
+    position: absolute;
+    content: "";
+    background-color: #E7E7F2;
+    height: 10px;
+    display: block;
+    border-radius: 0 0 12px 12px;
+    right: 40px;
+    left: 40px;
+    top: calc(100% + 10px);
+}
+
+div.background::after {
+    position: absolute;
+    content: "";
+    background-color: #CACADB;
+    height: 10px;
+    display: block;
+    border-radius: 0 0 12px 12px;
+    right: 20px;
+    left: 20px;
+    top: calc(100%);
+}
+
+@media (min-width: 768px) {
+
+    section.top {
+        padding: 0;
+    }
+
     .wrapper {
         padding-left: 60px;
         padding-right: 60px;
@@ -54,6 +91,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
+
     .card:last-child {
         grid-column: 1 / -1;
     }
@@ -63,9 +101,73 @@
         grid-template-columns: 400px 1fr;
         grid-template-rows: 1fr;
     }
+
+    div.address {
+        display: flex;
+    }
+
+    div.social {
+        display: flex;
+    }
+
+    div.logo {
+        margin-left: 0;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 130px;
+        height: 60px;
+    }
+
+    div.logo svg {
+        width: 100%;
+        height: auto;
+    }
+
+    div.contacts {
+        order: 1;
+        justify-content: flex-start;
+        padding: 0;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    div.contacts div:not(:last-child):after {
+        display: inline-block;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin: 6px;
+    }
+
+    div.navigation {
+        order: 3;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    button.hamburger {
+        display: none;
+    }
+
+    header.header {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    div.background {
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 50px;
+    }
 }
 
 @media (min-width: 1024px) {
+
     .wrapper {
         padding-left: 60px;
         padding-right: 60px;
@@ -78,14 +180,39 @@
     .client {
         width: 25%;
     }
+
     div.cards {
         grid-template-columns: 1fr 1fr 1fr;
     }
+
     .card:last-child {
         grid-column: auto / auto;
     }
-   
 
+    header.header {
+        height: 66px;
+        // взял значение в дизе + наш паддинг. Не указывать высоту не выйдет, иначе враппинг работать не будет.
+        row-gap: 0;
+    }
+
+    div.logo {
+        order: 1;
+        flex: 0 0 60px;
+        // вместо 50%
+    }
+
+    div.contacts {
+        order: 2;
+        flex: 0 0 calc(50%);
+        justify-content: flex-end;
+    }
+
+    div.navigation {
+        flex: 0 0 calc(50%);
+        order: 2;
+        align-items: self-end;
+        justify-content: flex-end;
+    }
 }
 
 @media (min-width: 1920px) {

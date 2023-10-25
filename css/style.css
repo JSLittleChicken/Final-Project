@@ -308,15 +308,10 @@ template {
 }
 
 section.top {
-  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
-  padding-bottom: 60px;
+  padding: 0px 30px;
   position: relative;
   border-radius: 0 0 12px 12px;
-}
-
-.wrapper {
-  padding-left: 30px;
-  padding-right: 30px;
+  max-width: 1600px;
 }
 
 div.general {
@@ -391,30 +386,6 @@ div.icon {
 img.icon-pic {
   width: 64px;
   height: 64px;
-}
-
-.top::before {
-  position: absolute;
-  content: "";
-  background-color: #E7E7F2;
-  height: 10px;
-  display: block;
-  border-radius: 0 0 12px 12px;
-  right: 40px;
-  left: 40px;
-  top: calc(100% + 10px);
-}
-
-.top::after {
-  position: absolute;
-  content: "";
-  background-color: #CACADB;
-  height: 10px;
-  display: block;
-  border-radius: 0 0 12px 12px;
-  right: 20px;
-  left: 20px;
-  top: 100%;
 }
 
 div.member {
@@ -675,6 +646,112 @@ div.info p {
   margin: 0;
 }
 
+div.lang {
+  display: flex;
+  align-items: center;
+}
+div.lang input {
+  display: none;
+}
+
+span.lang-name {
+  padding: 5px 7px;
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+div.lang label:has(input:checked) {
+  border-radius: 8px;
+  background: red;
+  cursor: pointer;
+}
+
+div.address {
+  display: none;
+}
+div.address a {
+  color: #B3B3BA;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+div.phone {
+  display: flex;
+  align-items: center;
+}
+div.phone a {
+  color: #FFF;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+div.social {
+  display: none;
+}
+
+div.logo {
+  margin-left: 15px;
+  order: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70px;
+  height: 32px;
+}
+
+div.contacts {
+  flex: 1 0 100%;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(245, 245, 250, 0.2);
+  order: 1;
+}
+
+div.contacts > div {
+  align-items: center;
+}
+
+div.navigation {
+  display: none;
+}
+
+div.navigation > a.nav-link {
+  color: #FFF;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+button.hamburger {
+  margin-right: 15px;
+  order: 3;
+  border: none;
+  background: transparent;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+header.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: auto;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat);
@@ -687,7 +764,40 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+div.background {
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  padding-bottom: 60px;
+  position: relative;
+}
+
+div.background::before {
+  position: absolute;
+  content: "";
+  background-color: #E7E7F2;
+  height: 10px;
+  display: block;
+  border-radius: 0 0 12px 12px;
+  right: 40px;
+  left: 40px;
+  top: calc(100% + 10px);
+}
+
+div.background::after {
+  position: absolute;
+  content: "";
+  background-color: #CACADB;
+  height: 10px;
+  display: block;
+  border-radius: 0 0 12px 12px;
+  right: 20px;
+  left: 20px;
+  top: 100%;
+}
+
 @media (min-width: 768px) {
+  section.top {
+    padding: 0;
+  }
   .wrapper {
     padding-left: 60px;
     padding-right: 60px;
@@ -725,6 +835,59 @@ body {
     grid-template-columns: 400px 1fr;
     grid-template-rows: 1fr;
   }
+  div.address {
+    display: flex;
+  }
+  div.social {
+    display: flex;
+  }
+  div.logo {
+    margin-left: 0;
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 130px;
+    height: 60px;
+  }
+  div.logo svg {
+    width: 100%;
+    height: auto;
+  }
+  div.contacts {
+    order: 1;
+    justify-content: flex-start;
+    padding: 0;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  div.contacts div:not(:last-child):after {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 6px;
+  }
+  div.navigation {
+    order: 3;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  button.hamburger {
+    display: none;
+  }
+  header.header {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  div.background {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 50px;
+  }
 }
 @media (min-width: 1024px) {
   .wrapper {
@@ -742,6 +905,25 @@ body {
   }
   .card:last-child {
     grid-column: auto/auto;
+  }
+  header.header {
+    height: 66px;
+    row-gap: 0;
+  }
+  div.logo {
+    order: 1;
+    flex: 0 0 60px;
+  }
+  div.contacts {
+    order: 2;
+    flex: 0 0 50%;
+    justify-content: flex-end;
+  }
+  div.navigation {
+    flex: 0 0 50%;
+    order: 2;
+    align-items: self-end;
+    justify-content: flex-end;
   }
 }
 @media (min-width: 1920px) {
