@@ -213,14 +213,12 @@ div.background::after {
 
     header.header {
         height: 116px;
-        // взял значение в дизе + наш паддинг. Не указывать высоту не выйдет, иначе враппинг работать не будет.
         row-gap: 0;
     }
 
     div.logo {
         order: 1;
         flex: 0 0 60px;
-        // вместо 50%
     }
 
     div.contacts {
