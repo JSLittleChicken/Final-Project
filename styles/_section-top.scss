@@ -2,7 +2,8 @@ section.top {
     padding: 0px 30px;
     position: relative;
     border-radius: 0 0 12px 12px;
-    max-width: 1600px;
+    max-width: 1720px;
+    margin: auto;
 }
 
 div.general {
@@ -38,11 +39,12 @@ div.general a:hover svg path {
 h2 {
     font-size: 30px;
     font-weight: 700;
-    background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+    background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-top: 10px;
     margin-bottom: 30px;
+    word-break: break-word;
 }
 
 div.block h3 {

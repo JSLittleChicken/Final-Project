@@ -1,0 +1,75 @@
+section.experience {
+    max-width: 1360px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+div.benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 30px;
+}
+section.experience div.divider {
+    border-top: 4px solid #FFFFFF4D;
+    margin: 0 30px;
+}
+
+p.ben-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+p.ben-text {
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;   
+}
+
+a.swipe-link {
+    color: #B3B3BA;
+    text-align: right;
+    font-size: 38px;
+    font-weight: 700;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+a.active {
+    background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.swipe {
+    overflow-x: auto;
+    padding: 0 30px;
+}
+
+.swipe-drawer {
+    display: flex;
+    gap: 30px;
+    a.swipe-link {
+        color: #B3B3BA;
+        text-align: right;
+        font-size: 38px;
+        font-weight: 700;
+        text-decoration: none;
+        flex-shrink: 0;
+    }
+    a.active {
+        background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    a.swipe-link:hover {
+        color: #F0145A;
+    }
+}

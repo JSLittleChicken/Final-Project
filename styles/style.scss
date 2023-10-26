@@ -4,6 +4,8 @@
 @import './clients';
 @import './articles';
 @import './header';
+@import './experience';
+@import './main-splash';
 
 @font-face {
     font-family: 'Montserrat';
@@ -24,6 +26,9 @@ div.background {
     background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
     padding-bottom: 60px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 div.background::before {
@@ -49,11 +54,16 @@ div.background::after {
     left: 20px;
     top: calc(100%);
 }
+.wrapper {
+    max-width: 1720px;
+    padding: 0 30px;
+    margin: auto;
+}
 
 @media (min-width: 768px) {
 
     section.top {
-        padding: 0;
+        padding: 0 60px;
     }
 
     .wrapper {
@@ -94,12 +104,6 @@ div.background::after {
 
     .card:last-child {
         grid-column: 1 / -1;
-    }
-
-    div.member {
-        display: grid;
-        grid-template-columns: 400px 1fr;
-        grid-template-rows: 1fr;
     }
 
     div.address {
@@ -157,20 +161,38 @@ div.background::after {
     header.header {
         flex-direction: column;
         row-gap: 30px;
+        padding: 50px 60px 0;
     }
 
-    div.background {
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-top: 50px;
+    div.benefits {
+        padding: 0 60px;
+    }
+
+    div.swipe {
+        padding: 0 60px;
+    }
+
+    section.experience {
+        gap: 60px;
+        div.divider {
+            margin: 0 60px;
+        }
+    }
+    p.ben-title {
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0;
+    }
+    div.main-splash {
+        height: 1024px;
     }
 }
 
 @media (min-width: 1024px) {
-
-    .wrapper {
-        padding-left: 60px;
-        padding-right: 60px;
+    div.member {
+        grid-template-columns: 400px 1fr;
+        grid-template-rows: 1fr;
     }
 
     .block {
@@ -190,7 +212,7 @@ div.background::after {
     }
 
     header.header {
-        height: 66px;
+        height: 116px;
         // взял значение в дизе + наш паддинг. Не указывать высоту не выйдет, иначе враппинг работать не будет.
         row-gap: 0;
     }
@@ -213,33 +235,52 @@ div.background::after {
         align-items: self-end;
         justify-content: flex-end;
     }
+    div.swipe {
+        overflow: visible;
+    }
+    section.experience {
+        flex-direction: row;
+        margin: auto;
+    }
+    div.swipe-drawer {
+        flex-direction: column;
+    }
+    div.benefits {
+        padding: 0 60px 0 0;
+        flex: 1 0 calc(50% - 2px);
+        align-self: center;
+    }
+
+    div.swipe {
+        padding: 0 0 0 60px;
+        align-self: center;
+        min-width: 420px;
+    }
+    section.experience {
+        flex-direction: row;
+        justify-content: space-between;
+        div.divider {
+            margin: 0;
+            border-left: 4px solid #FFFFFF4D;
+        }
+    }
+    div.main-splash {
+        height: 768px;
+    }
 }
-
+@media (min-width: 1440px) {
+    div.main-splash {
+        height: 799px;
+    }
+}
 @media (min-width: 1920px) {
-    .wrapper {
-        padding-left: 160px;
-        padding-right: 160px;
+    div.main-splash {
+        height: 1000px;
     }
-
-    .wrapper-clients {
-        padding-left: 100px;
-        padding-right: 100px;
+}
+@media (min-width: 1720px) {
+    section.clients {
+        border-radius: 12px;
+        overflow: hidden;
     }
-
-    .client:nth-child(1) {
-        border-radius: 12px 0 0 0;
-    }
-
-    .client:nth-child(4) {
-        border-radius: 0 12px 0 0;
-    }
-
-    .client:nth-child(9) {
-        border-radius: 0 0 0 12px;
-    }
-
-    .client:nth-child(12) {
-        border-radius: 0 0 12px 0;
-    }
-
 }

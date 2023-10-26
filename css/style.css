@@ -311,7 +311,8 @@ section.top {
   padding: 0px 30px;
   position: relative;
   border-radius: 0 0 12px 12px;
-  max-width: 1600px;
+  max-width: 1720px;
+  margin: auto;
 }
 
 div.general {
@@ -346,11 +347,12 @@ div.general a:hover svg path {
 h2 {
   font-size: 30px;
   font-weight: 700;
-  background: var(--gradient-red-text, linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%));
+  background: linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 10px;
   margin-bottom: 30px;
+  word-break: break-word;
 }
 
 div.block h3 {
@@ -455,8 +457,8 @@ span {
 }
 
 .wrapper-clients {
-  padding-left: 0px;
-  padding-right: 0px;
+  max-width: 1720px;
+  margin: auto;
 }
 
 p.slogan {
@@ -748,8 +750,124 @@ header.header {
   flex-wrap: wrap;
   row-gap: 15px;
   justify-content: space-between;
-  max-width: 1600px;
+  max-width: 1720px;
   margin: auto;
+}
+
+section.experience {
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+div.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+section.experience div.divider {
+  border-top: 4px solid rgba(255, 255, 255, 0.3019607843);
+  margin: 0 30px;
+}
+
+p.ben-title {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+p.ben-text {
+  color: #FFF;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+a.swipe-link {
+  color: #B3B3BA;
+  text-align: right;
+  font-size: 38px;
+  font-weight: 700;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+a.active {
+  background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.swipe {
+  overflow-x: auto;
+  padding: 0 30px;
+}
+
+.swipe-drawer {
+  display: flex;
+  gap: 30px;
+}
+.swipe-drawer a.swipe-link {
+  color: #B3B3BA;
+  text-align: right;
+  font-size: 38px;
+  font-weight: 700;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+.swipe-drawer a.active {
+  background: linear-gradient(90deg, #EF8080 0.84%, #F0145A 99.96%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.swipe-drawer a.swipe-link:hover {
+  color: #F0145A;
+}
+
+div.main-splash {
+  height: 600px;
+  background: url(../images/Symbol.png) no-repeat center;
+  background-size: auto 100%;
+  position: relative;
+}
+
+div.main-splash::after {
+  position: absolute;
+  content: "you legal solutions provider";
+  color: #FFF;
+  text-align: center;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+button.scroll-button {
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+
+button.scroll-button:hover svg g * {
+  stroke: #F0145A;
+}
+
+button.scroll-button:hover svg defs * {
+  fill: #F0145A;
 }
 
 @font-face {
@@ -768,6 +886,9 @@ div.background {
   background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   padding-bottom: 60px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 div.background::before {
@@ -794,9 +915,15 @@ div.background::after {
   top: 100%;
 }
 
+.wrapper {
+  max-width: 1720px;
+  padding: 0 30px;
+  margin: auto;
+}
+
 @media (min-width: 768px) {
   section.top {
-    padding: 0;
+    padding: 0 60px;
   }
   .wrapper {
     padding-left: 60px;
@@ -829,11 +956,6 @@ div.background::after {
   }
   .card:last-child {
     grid-column: 1/-1;
-  }
-  div.member {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-    grid-template-rows: 1fr;
   }
   div.address {
     display: flex;
@@ -882,17 +1004,34 @@ div.background::after {
   header.header {
     flex-direction: column;
     row-gap: 30px;
+    padding: 50px 60px 0;
   }
-  div.background {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 50px;
+  div.benefits {
+    padding: 0 60px;
+  }
+  div.swipe {
+    padding: 0 60px;
+  }
+  section.experience {
+    gap: 60px;
+  }
+  section.experience div.divider {
+    margin: 0 60px;
+  }
+  p.ben-title {
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+  }
+  div.main-splash {
+    height: 1024px;
   }
 }
 @media (min-width: 1024px) {
-  .wrapper {
-    padding-left: 60px;
-    padding-right: 60px;
+  div.member {
+    grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr;
   }
   .block {
     width: calc(33% - 60px);
@@ -907,7 +1046,7 @@ div.background::after {
     grid-column: auto/auto;
   }
   header.header {
-    height: 66px;
+    height: 116px;
     row-gap: 0;
   }
   div.logo {
@@ -925,27 +1064,52 @@ div.background::after {
     align-items: self-end;
     justify-content: flex-end;
   }
+  div.swipe {
+    overflow: visible;
+  }
+  section.experience {
+    flex-direction: row;
+    margin: auto;
+  }
+  div.swipe-drawer {
+    flex-direction: column;
+  }
+  div.benefits {
+    padding: 0 60px 0 0;
+    flex: 1 0 calc(50% - 2px);
+    align-self: center;
+  }
+  div.swipe {
+    padding: 0 0 0 60px;
+    align-self: center;
+    min-width: 420px;
+  }
+  section.experience {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  section.experience div.divider {
+    margin: 0;
+    border-left: 4px solid rgba(255, 255, 255, 0.3019607843);
+  }
+  div.main-splash {
+    height: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  div.main-splash {
+    height: 799px;
+  }
 }
 @media (min-width: 1920px) {
-  .wrapper {
-    padding-left: 160px;
-    padding-right: 160px;
+  div.main-splash {
+    height: 1000px;
   }
-  .wrapper-clients {
-    padding-left: 100px;
-    padding-right: 100px;
-  }
-  .client:nth-child(1) {
-    border-radius: 12px 0 0 0;
-  }
-  .client:nth-child(4) {
-    border-radius: 0 12px 0 0;
-  }
-  .client:nth-child(9) {
-    border-radius: 0 0 0 12px;
-  }
-  .client:nth-child(12) {
-    border-radius: 0 0 12px 0;
+}
+@media (min-width: 1720px) {
+  section.clients {
+    border-radius: 12px;
+    overflow: hidden;
   }
 }
 
