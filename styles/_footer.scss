@@ -1,0 +1,69 @@
+div.footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    div.divider {
+        border-top: 2px solid #E6E6F0;
+
+    }
+
+    div.f-contacts {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.foot-address {
+        margin-bottom: 10px;
+        p {
+        color: #323264;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+    div.direction {
+        margin-bottom: 21px;
+    
+    a {
+        text-transform: uppercase;
+        color: #24A3FF;
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-decoration: none;
+       
+    }
+}
+
+
+    .phone.foot a {
+        color: #46466E;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    div.email {
+        margin-bottom: 30px;
+    }
+    .email a {
+        color: #24A3FF;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        
+    }
+
+    .copyright p {
+        color: #B3B3BA;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+
+    }
+
+
+
+}

@@ -870,6 +870,60 @@ button.scroll-button:hover svg defs * {
   fill: #F0145A;
 }
 
+div.footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+div.footer div.divider {
+  border-top: 2px solid #E6E6F0;
+}
+div.footer div.f-contacts {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.footer div.foot-address {
+  margin-bottom: 10px;
+}
+div.footer div.foot-address p {
+  color: #323264;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+div.footer div.direction {
+  margin-bottom: 21px;
+}
+div.footer div.direction a {
+  text-transform: uppercase;
+  color: #24A3FF;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+div.footer .phone.foot a {
+  color: #46466E;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.footer div.email {
+  margin-bottom: 30px;
+}
+div.footer .email a {
+  color: #24A3FF;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+div.footer .copyright p {
+  color: #B3B3BA;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/Montserrat);
