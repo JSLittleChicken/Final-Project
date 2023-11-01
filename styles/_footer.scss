@@ -8,15 +8,21 @@ div.footer {
     }
 
     div.f-contacts {
-        margin-top: 30px;
         display: flex;
         flex-direction: column;
+        margin-top: 30px;
         align-items: center;
     }
 
-    div.foot-address {
-        margin-bottom: 10px;
-        p {
+    div.address-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 21px;
+    }
+
+    div.foot-address p {
         color: #323264;
         font-size: 16px;
         font-weight: 400;
@@ -24,10 +30,7 @@ div.footer {
     }
 }
 
-    div.direction {
-        margin-bottom: 21px;
-    
-    a {
+    div.direction a {
         text-transform: uppercase;
         color: #24A3FF;
         font-size: 12px;
@@ -36,18 +39,22 @@ div.footer {
         text-decoration: none;
        
     }
-}
 
+    div.contact-box > * {
+        margin: 0;
+    }
+
+    div.contact-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 
     .phone.foot a {
         color: #46466E;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
-    div.email {
-        margin-bottom: 30px;
-    }
     .email a {
         color: #24A3FF;
         font-size: 16px;
@@ -56,14 +63,17 @@ div.footer {
         
     }
 
-    .copyright p {
+    .copyright {
+        display: flex;
+    
+        p {
         color: #B3B3BA;
         font-size: 16px;
         font-weight: 400;
-        margin: 0;
+
+        }
 
     }
 
 
 
-}

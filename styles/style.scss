@@ -188,6 +188,44 @@ div.background::after {
     div.main-splash {
         height: 1024px;
     }
+
+    /*footer*/
+
+    div.footer div.f-contacts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    div.footer div.address-box {
+        flex-direction: row;
+        order: -2;
+    }
+
+    div.contact-box {
+        flex-direction: row;
+        align-items: center;
+    }
+    }
+
+    div.copyright {
+        order: -1;
+    }
+
+    div.footer div.address-box {
+        margin-bottom: 0;
+    }
+
+
+    div.contact-box > *:not(:last-child):after {
+    display: inline-block;
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #B3B3BA;
+    margin: 6px;
+   
 }
 
 @media (min-width: 1024px) {
