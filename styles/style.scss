@@ -195,6 +195,7 @@ div.background::after {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: 21px;
     }
 
     div.footer div.address-box {
@@ -205,7 +206,6 @@ div.background::after {
     div.contact-box {
         flex-direction: row;
         align-items: center;
-    }
     }
 
     div.copyright {
@@ -224,8 +224,39 @@ div.background::after {
     height: 6px;
     border-radius: 50%;
     background-color: #B3B3BA;
-    margin: 6px;
+    margin: 10px;
+    }
+
+    div.contact-box  {
+        gap: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    div.footer div.address-box {
+        gap: 0;
+    }
    
+    div.contact-box > div {
+        display: flex;
+        align-items: center;
+    }
+
+    div.address-box > *:not(:last-child):after {
+        display: inline-block;
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #B3B3BA;
+        margin: 10px;
+        }
+
+        div.address-box > div {
+            display: flex;
+            align-items: center;
+        }
+
 }
 
 @media (min-width: 1024px) {
@@ -304,7 +335,10 @@ div.background::after {
     div.main-splash {
         height: 768px;
     }
+
 }
+
+
 @media (min-width: 1440px) {
     div.main-splash {
         height: 799px;
