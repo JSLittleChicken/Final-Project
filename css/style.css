@@ -734,14 +734,59 @@ div.navigation > a.nav-link {
   text-decoration: none;
 }
 
+.dropdown {
+  order: 3;
+  display: block;
+}
+
 button.hamburger {
   margin-right: 15px;
-  order: 3;
   border: none;
   background: transparent;
   padding: 0;
   width: 32px;
   height: 32px;
+}
+
+button.hamburger:active {
+  background: #E6E6F0;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  color: #24A3FF;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 7px 0px;
+  gap: 10px;
+  border-radius: 12px;
+  background: #F5F5FA;
+}
+
+div.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+div.menu-sheet {
+  border-radius: 12px 12px 0px 0px;
+  background: #FFF;
+  padding: 12px;
+}
+
+div.bc {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button.close {
+  background: transparent;
+  width: 32px;
+  height: 32px;
+  border: none;
 }
 
 header.header {
