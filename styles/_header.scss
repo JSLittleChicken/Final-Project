@@ -92,8 +92,11 @@ div.navigation>a.nav-link {
 }
 
 .dropdown {
-    order: 3;
     display: block;
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
 }
 
 button.hamburger {
@@ -103,6 +106,7 @@ button.hamburger {
     padding: 0;
     width: 32px;
     height: 32px;
+    order: 3;
 }
 
 button.hamburger:active {
@@ -133,11 +137,13 @@ div.menu-sheet {
     border-radius: 12px 12px 0px 0px;
     background: #FFF;
     padding: 12px;
+    display: block;
 }
 
 div.bc {
      display: flex;
      justify-content: flex-end;
+     margin-bottom: 20px;
 }
 button.close {
     background: transparent;
