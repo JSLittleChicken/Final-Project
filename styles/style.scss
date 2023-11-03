@@ -60,8 +60,9 @@ div.background::after {
     padding: 0 30px;
     margin: auto;
 }
-path.hover:hover {
-    fill:  #F0145A;
+
+div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path {
+    fill: #F0145A
 }
 
 @media (min-width: 768px) {
