@@ -24,7 +24,7 @@ div.lang a.selected {
     cursor: pointer;
 }
 
-div.lang a:hover {
+div.lang a:hover:not(.selected) {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.20);
 }

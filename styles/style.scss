@@ -195,14 +195,14 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
 
     /*footer*/
 
-    div.footer div.f-contacts {
+    footer div.f-contacts {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 21px;
     }
 
-    div.footer div.address-box {
+    footer div.address-box {
         flex-direction: row;
         order: -2;
     }
@@ -216,7 +216,7 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
         order: -1;
     }
 
-    div.footer div.address-box {
+    footer div.address-box {
         margin-bottom: 0;
     }
 
@@ -237,7 +237,7 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
         max-width: 100%;
     }
 
-    div.footer div.address-box {
+    footer div.address-box {
         gap: 0;
     }
    

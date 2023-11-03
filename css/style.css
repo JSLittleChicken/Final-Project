@@ -671,7 +671,7 @@ div.lang a.selected {
   cursor: pointer;
 }
 
-div.lang a:hover {
+div.lang a:hover:not(.selected) {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
 }
@@ -943,27 +943,27 @@ button.scroll-button:hover svg defs * {
   fill: #F0145A;
 }
 
-div.footer {
+footer {
   margin-top: 30px;
   margin-bottom: 0;
 }
-div.footer div.divider {
+footer div.divider {
   border-top: 2px solid #E6E6F0;
 }
-div.footer div.f-contacts {
+footer div.f-contacts {
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   align-items: center;
 }
-div.footer div.address-box {
+footer div.address-box {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   margin-bottom: 21px;
 }
-div.footer div.foot-address p {
+footer div.foot-address p {
   color: #323264;
   font-size: 16px;
   font-weight: 400;
@@ -1180,13 +1180,13 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     height: 1024px;
   }
   /*footer*/
-  div.footer div.f-contacts {
+  footer div.f-contacts {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 21px;
   }
-  div.footer div.address-box {
+  footer div.address-box {
     flex-direction: row;
     order: -2;
   }
@@ -1197,7 +1197,7 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
   div.copyright {
     order: -1;
   }
-  div.footer div.address-box {
+  footer div.address-box {
     margin-bottom: 0;
   }
   div.contact-box > *:not(:last-child):after {
@@ -1214,7 +1214,7 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     width: 100%;
     max-width: 100%;
   }
-  div.footer div.address-box {
+  footer div.address-box {
     gap: 0;
   }
   div.contact-box > div {
