@@ -105,6 +105,12 @@ div.navigation>a.nav-link:hover {
     text-underline-offset: 7px;
 }
 
+div.navigation>a.selected {
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
 .dropdown {
     background: rgba(50, 50, 100, 0.7);
     position: fixed;

@@ -25,7 +25,7 @@
             <div class="phone articles">
                 <a href="tel:0800211927">0800 211 927</a>
             </div>
-            <div class="social">
+            <div class="social articles">
                 <a href="https://facebook.com">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
                         <g clip-path="url(#clip0_118239_2805)">
@@ -44,6 +44,7 @@
         </div>
         <!-- start logo -->
         <div class="logo dark">
+            <a class="main-logo" href="index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="70" height="25" viewBox="0 0 70 25" fill="none">
                 <path
                     d="M2.64358 0H0V19.0926H2.64358V12.0094C2.64358 10.8111 2.94163 9.86583 3.53774 9.20012C4.13384 8.53441 4.95024 8.18824 5.96102 8.18824C6.82926 8.18824 7.55495 8.50778 8.13809 9.12024C8.72123 9.74601 9.01929 10.5315 9.01929 11.4769V19.1059H11.6758V11.4769C11.6758 9.71938 11.1964 8.3347 10.2374 7.29619C9.27846 6.25768 8.02146 5.73843 6.49233 5.73843C6.05173 5.73843 5.61114 5.79168 5.1835 5.91151C4.7429 6.03134 4.39301 6.16448 4.10792 6.31094C3.82283 6.45739 3.5507 6.61717 3.30448 6.80356C3.05826 6.98996 2.8898 7.12311 2.81205 7.20299C2.73429 7.28288 2.6695 7.33613 2.64358 7.37608V0Z"
@@ -90,17 +91,18 @@
                     d="M67.9013 2.71039V4.01603H67.0485V2.69986L65.6217 0.330754H66.5273L67.5117 1.96807L68.4963 0.330754H69.3333L67.9013 2.71039Z"
                     fill="white" />
             </svg>
+        </a>
         </div>
         <!-- end logo -->
 
 
 
         <!-- start nav menu -->
-        <div class="navigation">
+        <div class="navigation articles">
             <a class="nav-link" href="">about us</a>
             <a class="nav-link" href="">services</a>
             <a class="nav-link" href="">team</a>
-            <a class="nav-link" href="">publications</a>
+            <a class="nav-link selected" href="">publications</a>
             <a class="nav-link" href="">contacts</a>
         </div>
         <!-- end nav menu -->
@@ -116,23 +118,25 @@
         </button>
 
         <!-- end nav menu -->
+        
     </header>
+    <div class="spacer"></div>
     
 
     <section class="articles">
         <div class="options">
             <div class="switch-container">
                 <input type="radio" name="switch" id="news" checked>
-                <input type="radio" name="switch" id="articles">
-    
                 <label for="news" class="switch-label switch-news">news</label>
+                
+                <input type="radio" name="switch" id="articles">
                 <label for="articles" class="switch-label switch-articles">articles</label>
     
                 <div class="slider"></div>
             </div>
         </div>
         <div class="wrapper">
-            <div class="cards">
+            <div class="cards articles">
                 <div class="card">
                     <picture>
                         <source type="image/avif" srcset="images/articles/first.avif">
@@ -214,6 +218,7 @@
                 </div>
             </div>
         </div>
+        <button class="more">More publications</button>
         <footer>
             <div class="wrapper">
                 <div class="divider"></div>

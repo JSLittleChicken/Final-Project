@@ -1,0 +1,26 @@
+div.card.article {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+div.info-entry {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+
+div.spacer {
+    display: block;
+}
+
+p.ben-title.entry {
+    color: #323264;
+}
+
+p.description.article {
+    color: #000;
+}
+
+
