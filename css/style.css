@@ -733,11 +733,11 @@ div.contacts > div {
   align-items: center;
 }
 
-div.navigation {
+nav.navigation {
   display: none;
 }
 
-div.navigation > a.nav-link {
+nav.navigation > a.nav-link {
   color: #FFF;
   text-align: right;
   font-size: 16px;
@@ -745,12 +745,12 @@ div.navigation > a.nav-link {
   text-decoration: none;
 }
 
-div.navigation > a.nav-link:hover {
+nav.navigation > a.nav-link:hover {
   text-decoration: underline;
   text-underline-offset: 7px;
 }
 
-div.navigation > a.selected {
+nav.navigation > a.selected {
   color: red;
   text-decoration: underline;
   text-underline-offset: 7px;
@@ -795,7 +795,7 @@ button.hamburger:active {
   background: #F5F5FA;
 }
 
-div.dropdown-content {
+nav.dropdown-content {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -832,7 +832,7 @@ header.header {
   row-gap: 15px;
   justify-content: space-between;
   max-width: 1720px;
-  margin: auto;
+  width: 100%;
 }
 
 section.experience {
@@ -913,34 +913,28 @@ a.active {
 }
 
 div.main-splash {
-  height: 600px;
+  height: 100vh;
   background: url(../images/Symbol.png) no-repeat center;
   background-size: auto 100%;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-div.main-splash::after {
-  position: absolute;
-  content: "you legal solutions provider";
-  color: #FFF;
+div.main-splash > p.splash-text {
   text-align: center;
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+  color: #FFF;
+  margin: 0 20px;
 }
 
 button.scroll-button {
   background: none;
   border: none;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 0);
   cursor: pointer;
+  margin: 0 auto 30px auto;
 }
 
 button.scroll-button:hover svg g * {
@@ -1143,14 +1137,15 @@ div.card.article {
   gap: 30px;
 }
 
+div.spacer.pub {
+  display: block;
+  height: 30px;
+}
+
 div.info-entry {
   display: flex;
   gap: 15px;
   flex-direction: column;
-}
-
-div.spacer {
-  display: block;
 }
 
 p.ben-title.entry {
@@ -1159,6 +1154,54 @@ p.ben-title.entry {
 
 p.description.article {
   color: #000;
+  font-size: 16px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 26px;
+  align-self: stretch;
+}
+
+div.description-1.article {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+p.art-bold {
+  color: #46466E;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+h2.article {
+  margin: 0;
+}
+
+div.list-item {
+  display: flex;
+  gap: 10px;
+}
+
+p.number {
+  color: #F0145A;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  text-align: end;
+}
+
+p.list-item-text {
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0;
+}
+
+div.number {
+  flex: 0 0 30px;
 }
 
 @font-face {
@@ -1272,6 +1315,7 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     height: auto;
   }
   div.contacts {
+    flex: auto;
     order: 1;
     justify-content: flex-start;
     padding: 0;
@@ -1287,7 +1331,7 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     background-color: #fff;
     margin: 6px;
   }
-  div.navigation {
+  nav.navigation {
     order: 3;
     display: flex;
     align-items: center;
@@ -1318,9 +1362,6 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     font-size: 30px;
     font-weight: 700;
     margin: 0;
-  }
-  div.main-splash {
-    height: 1024px;
   }
   /*footer*/
   footer div.f-contacts {
@@ -1399,14 +1440,14 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
   div.social.articles > a:hover > svg > g > path {
     fill: #F0145A;
   }
-  div.navigation.articles > a.nav-link {
+  nav.navigation.articles > a.nav-link {
     color: #24A3FF;
   }
-  div.navigation.articles > a.nav-link:hover, div.navigation.articles > a.nav-link.selected:hover {
+  nav.navigation.articles > a.nav-link:hover, nav.navigation.articles > a.nav-link.selected:hover {
     text-decoration: underline;
     text-underline-offset: 7px;
   }
-  div.navigation.articles > a.nav-link.selected {
+  nav.navigation.articles > a.nav-link.selected {
     color: #F0145A;
     text-decoration: underline;
     text-underline-offset: 7px;
@@ -1452,11 +1493,14 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     flex: 0 0 50%;
     justify-content: flex-end;
   }
-  div.navigation {
+  nav.navigation {
     flex: 0 0 50%;
     order: 2;
     align-items: self-end;
     justify-content: flex-end;
+  }
+  div.main-splash {
+    align-items: center;
   }
   div.swipe {
     overflow: visible;
@@ -1486,21 +1530,8 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     margin: 0;
     border-left: 4px solid rgba(255, 255, 255, 0.3019607843);
   }
-  div.main-splash {
-    height: 768px;
-  }
   div.cards.articles {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-@media (min-width: 1440px) {
-  div.main-splash {
-    height: 799px;
-  }
-}
-@media (min-width: 1920px) {
-  div.main-splash {
-    height: 1000px;
   }
 }
 @media (min-width: 1720px) {

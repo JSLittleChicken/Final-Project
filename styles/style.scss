@@ -137,6 +137,7 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
     }
 
     div.contacts {
+        flex: auto;
         order: 1;
         justify-content: flex-start;
         padding: 0;
@@ -154,7 +155,7 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
         margin: 6px;
     }
 
-    div.navigation {
+    nav.navigation {
         order: 3;
         display: flex;
         align-items: center;
@@ -190,9 +191,6 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
         font-size: 30px;
         font-weight: 700;
         margin: 0;
-    }
-    div.main-splash {
-        height: 1024px;
     }
 
     /*footer*/
@@ -291,16 +289,16 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
             fill: #F0145A;
         }
 
-        div.navigation.articles>a.nav-link {
+        nav.navigation.articles>a.nav-link {
             color: #24A3FF;
         }
 
-        div.navigation.articles>a.nav-link:hover, div.navigation.articles>a.nav-link.selected:hover {
+        nav.navigation.articles>a.nav-link:hover, nav.navigation.articles>a.nav-link.selected:hover {
             text-decoration: underline;
             text-underline-offset: 7px;
         }
 
-        div.navigation.articles>a.nav-link.selected {
+        nav.navigation.articles>a.nav-link.selected {
             color: #F0145A;
             text-decoration: underline;
             text-underline-offset: 7px;
@@ -361,11 +359,14 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
         justify-content: flex-end;
     }
 
-    div.navigation {
+    nav.navigation {
         flex: 0 0 calc(50%);
         order: 2;
         align-items: self-end;
         justify-content: flex-end;
+    }
+    div.main-splash {
+        align-items: center;
     }
     div.swipe {
         overflow: visible;
@@ -396,9 +397,6 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
             border-left: 4px solid #FFFFFF4D;
         }
     }
-    div.main-splash {
-        height: 768px;
-    }
 
     div.cards.articles {
         grid-template-columns: 1fr 1fr 1fr;
@@ -406,16 +404,6 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
 }
 
 
-@media (min-width: 1440px) {
-    div.main-splash {
-        height: 799px;
-    }
-}
-@media (min-width: 1920px) {
-    div.main-splash {
-        height: 1000px;
-    }
-}
 @media (min-width: 1720px) {
     section.clients {
         border-radius: 12px;

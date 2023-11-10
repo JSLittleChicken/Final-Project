@@ -88,11 +88,11 @@ div.contacts>div {
     align-items: center;
 }
 
-div.navigation {
+nav.navigation {
     display: none;
 }
 
-div.navigation>a.nav-link {
+nav.navigation>a.nav-link {
     color: #FFF;
     text-align: right;
     font-size: 16px;
@@ -100,12 +100,12 @@ div.navigation>a.nav-link {
     text-decoration: none;
 }
 
-div.navigation>a.nav-link:hover {
+nav.navigation>a.nav-link:hover {
     text-decoration: underline;
     text-underline-offset: 7px;
 }
 
-div.navigation>a.selected {
+nav.navigation>a.selected {
     color: red;
     text-decoration: underline;
     text-underline-offset: 7px;
@@ -153,7 +153,7 @@ button.hamburger:active {
 
 }
 
-div.dropdown-content {
+nav.dropdown-content {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -168,10 +168,7 @@ div.menu-sheet {
         bottom: 0;
         left: 8px;
         right: 8px;
-    }
-    
-    
-
+}
 
 div.bc {
      display: flex;
@@ -192,5 +189,5 @@ header.header {
     row-gap: 15px;
     justify-content: space-between;
     max-width: 1720px;
-    margin: auto;
+    width: 100%;
 }
