@@ -29,7 +29,7 @@ p.description.article {
 
 div.description-1.article {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-direction: column;
 }
 
@@ -73,4 +73,34 @@ div.number {
     // justify-content:right;
     // flex-direction: column;
 
+}
+
+div.article-picture {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+p.article-picture-desc {
+    color: var(--grey-text, #B3B3BA);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+div.sm-icons {
+    display: flex;
+    gap: 10px;
+}
+
+button.sm {
+    border-radius: 12px;
+    background: #F5F5FA;
+    padding: 9px;
+    border: none;
+}
+
+div.spacer {
+    display: block;
 }

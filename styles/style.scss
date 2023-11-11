@@ -312,9 +312,9 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
         display: grid;
         grid-template-columns: 1fr 1fr;
 
-       }
+        }
 
-       .card:last-child {
+       .last.card:last-child {
         grid-column: auto;
        }
     
