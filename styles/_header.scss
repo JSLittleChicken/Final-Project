@@ -63,12 +63,33 @@ div.social {
 div.logo {
     margin-left: 15px;
     order: 2;
+
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 70px;
-    height: 32px;
+    justify-content: start;
+    align-items: start;
+    gap: 4px;
+    
+    a.main-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70px;
+        height: 32px;
+    }
+    p.logo-current-page {
+        color: #323264;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+    }
+    svg.logo-slash {
+        width: auto;
+        height: 26px;
+    }
 }
+
 
 div.contacts {
     flex: 1 0 100%;

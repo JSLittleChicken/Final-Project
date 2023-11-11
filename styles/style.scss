@@ -124,16 +124,18 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
     div.logo {
         margin-left: 0;
         order: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        width: 130px;
-        height: 60px;
-    }
 
-    div.logo svg {
-        width: 100%;
-        height: auto;
+        a.main-logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 130px;
+            height: 60px;
+            svg {
+                width: 100%;
+                height: auto;
+            }
+        }        
     }
 
     div.contacts {

@@ -709,10 +709,28 @@ div.logo {
   margin-left: 15px;
   order: 2;
   display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 4px;
+}
+div.logo a.main-logo {
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 70px;
   height: 32px;
+}
+div.logo p.logo-current-page {
+  color: #323264;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+div.logo svg.logo-slash {
+  width: auto;
+  height: 26px;
 }
 
 div.contacts {
@@ -1334,13 +1352,15 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
   div.logo {
     margin-left: 0;
     order: 2;
+  }
+  div.logo a.main-logo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 130px;
     height: 60px;
   }
-  div.logo svg {
+  div.logo a.main-logo svg {
     width: 100%;
     height: auto;
   }
