@@ -4,19 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fonts/Montserrat/">
     <title>Document</title>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="fonts/Montserrat/">
-        <title>Document</title>
-    </head>
 </head>
 
 <body>
-    <header class="header">
+    <div class="dropdown">
+        <div class="menu-sheet">
+            <div class="bc">
+                <button type="button" class="close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M7 7L25 25" stroke="#EC6F5D" stroke-width="2" />
+                        <path d="M25 7L7 25" stroke="#EC6F5D" stroke-width="2" />
+                    </svg>
+                </button>
+            </div>
+            <nav class="dropdown-content">
+                <a href="">about us</a>
+                <a href="">послуги</a>
+                <a href="">команда</a>
+                <a class="current-page" href="publications.html">публікації</a>
+                <a href="">контакти</a>
+            </nav>
+        </div>
+    </div>
+    <header class="header spacer">
         <div class="contacts articles">
             <div class="lang articles">
                 <a class="switcher" href=""><span class="lang-name">УК</span></a>
@@ -98,8 +111,10 @@
                         fill="white" />
                 </svg>
             </a>
-            <svg class="logo-slash" xmlns="http://www.w3.org/2000/svg" width="21" height="47" viewBox="0 0 21 47" fill="none">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z" fill="#F0145A"/>
+            <svg class="logo-slash" xmlns="http://www.w3.org/2000/svg" width="21" height="47" viewBox="0 0 21 47"
+                fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z"
+                    fill="#F0145A" />
             </svg>
             <p class="logo-current-page">
                 publications
@@ -116,34 +131,37 @@
             <a class="nav-link" href="">team</a>
             <a class="nav-link selected" href="">publications</a>
             <a class="nav-link" href="">contacts</a>
-        </div>
-        <!-- end nav menu -->
-
-        <!-- start burger menu -->
-
-        <button class="hamburger dark">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
-                <path d="M7 10.5H25" stroke="white" stroke-width="2" />
-                <path d="M7 16.5H25" stroke="white" stroke-width="2" />
-                <path d="M7 22.5H25" stroke="white" stroke-width="2" />
-            </svg>
-        </button>
-
-        <!-- end nav menu -->
-
+        </nav>
     </header>
-    <div class="spacer pub"></div>
+    <!-- end nav menu -->
+
+    <!-- start burger menu -->
+
+    <button class="hamburger dark">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
+            <path d="M7 10.5H25" stroke="white" stroke-width="2" />
+            <path d="M7 16.5H25" stroke="white" stroke-width="2" />
+            <path d="M7 22.5H25" stroke="white" stroke-width="2" />
+        </svg>
+    </button>
+
+    <!-- end nav menu -->
+
     <div class="wrapper">
-        <div class="card article">
+        <div class="card-article">
             <picture>
                 <source type="image/avif" media="(max-width: 768px)" srcset="images/articles/Cover.avif">
                 <source type="image/webp" media="(max-width: 768px)" srcset="images/articles/Cover.webp">
                 <source media="(max-width: 768px)" srcset="images/articles/Cover.jpg">
-                <source type="image/avif" media="(min-width: 768px) and (max-width: 1024px)" srcset="images/articles/gdpr_768.avif">
-                <source type="image/webp" media="(min-width: 768px) and (max-width: 1024px)" srcset="images/articles/gdpr_768.webp">
+                <source type="image/avif" media="(min-width: 768px) and (max-width: 1024px)"
+                    srcset="images/articles/gdpr_768.avif">
+                <source type="image/webp" media="(min-width: 768px) and (max-width: 1024px)"
+                    srcset="images/articles/gdpr_768.webp">
                 <source media="(min-width: 768px)" srcset="images/articles/gdpr_768.jpg">
-                <source type="image/avif" media="(min-width: 1024px) and (max-width: 1920px)" srcset="images/articles/gdpr_1024.avif">
-                <source type="image/webp" media="(min-width: 1024px) and (max-width: 1920px)" srcset="images/articles/gdpr_1024.webp">
+                <source type="image/avif" media="(min-width: 1024px) and (max-width: 1920px)"
+                    srcset="images/articles/gdpr_1024.avif">
+                <source type="image/webp" media="(min-width: 1024px) and (max-width: 1920px)"
+                    srcset="images/articles/gdpr_1024.webp">
                 <source media="(min-width: 1920px)" srcset="images/articles/gdpr_1024.jpg">
                 <source type="image/avif" media="(min-width: 1920px)" srcset="images/articles/gdpr_1920.avif">
                 <source type="image/webp" media="(min-width: 1920px)" srcset="images/articles/gdpr_1920.webp">
@@ -152,14 +170,13 @@
 
             </picture>
             <div class="info-entry">
-                <p class="ben-title entry">Penalty for the Good Corporation: what will happen to Google and others
+                <p class="ben-title-entry">Penalty for the Good Corporation: what will happen to Google and others
                     for violating the GDPR</p>
                 <time datetime="2023-09-29">29 september</time>
-                <div class="divider">
-                </div>
             </div>
+            <div class="divider"></div>
             <div class="article-text">
-                <p class="description article">
+                <p class="description-article">
                     On January 21, the French National Data Protection Commission (CNIL) announced on its website that
                     it had fined Google for violating the EU's General Data Protection Regulation (GDPR). It took six
                     months for the EU countries to make a quality level-up in the amount of fines for non-compliance
@@ -167,9 +184,11 @@
                     amounting to € 400,000 and related to a hospital in Portugal. But this precedent is interesting not
                     so much the amount of the fine as the rigidity of the regulator's approaches. Denis Beregovyi, Axon
                     Partners, explains why, especially for Mind.
-                    For what?</p>
-                <div class="spacer pub"></div>
-                <p class="description article">The group complaints against Google arrived at CNIL on the same day that
+                    For what?
+                </p>
+                <div class="paragraph-spacer"></div>
+                <p class="description-article">
+                    The group complaints against Google arrived at CNIL on the same day that
                     the GDPR came into force. The complainants reported that Google processed users' personal data
                     without due cause, in particular to create personalized advertising offers.
                 </p>
@@ -178,7 +197,7 @@
                 To the attention of Ukrainian security officers: the inspection was conducted online, without searches,
                 without seizure of servers or other visible interference for business. And so it was possible.
             </h2>
-            <div class="description-1 article">
+            <div class="description-1-article">
                 <p class="art-bold">
                     According to the results of CNIL inspections revealed violations of two requirements of the GDPR:
                 </p>
@@ -200,97 +219,95 @@
                     </p>
                 </div>
             </div>
-            <p class="description article">
+            <p class="description-article">
                 In the case of personalization of advertising, Google was sure to obtain the consent of users, because,
                 firstly, when creating Google accounts, the user agrees to the Privacy Policy, and secondly, Google has
                 a section "Ads personalization", where you can disable this feature.
             </p>
             <div class="article-picture">
                 <picture>
-                    <source type="image/avif" media="(max-width: 768px)" srcset="images/article-entry-image.avif">
-                    <source type="image/webp" media="(max-width: 768px)" srcset="images/article-entry-image.webp">
-                    <source type="image/avif" media="(min-width: 768px)" srcset="images/article-img2-768.avif">
-                    <source type="image/webp" media="(min-width: 768px)" srcset="images/article-img2-768.webp">
-                    <img src="images/article-entry-image.jpg">
+                    <source type="image/avif" media="(max-width: 768px)"
+                        srcset="images/articles/article-entry-image.avif">
+                    <source type="image/webp" media="(max-width: 768px)"
+                        srcset="images/articles/article-entry-image.webp">
+                    <source type="image/avif" media="(min-width: 768px)" srcset="images/articles/article-img2-768.avif">
+                    <source type="image/webp" media="(min-width: 768px)" srcset="images/articles/article-img2-768.webp">
+                    <img src="images/article-entry-image.jpg" alt="gdpr-image">
                 </picture>
                 <p class="article-picture-desc">
                     This is what the ad personalization settings window in your Google Account looks like
                 </p>
             </div>
-            <p class="description article">
+            <p class="description-article">
                 However, CNIL does not think so, because the information about the personalization of advertising is not
                 clear enough to users. As an example, the Commission claims that the relevant "Personalization" window
                 does not contain information on the full range of Google services that collect and process personal data
                 for this purpose (YouTube, Google search, Play Store, Google pictures, Gmail, etc.). ), and therefore,
                 the user cannot realize to what extent the data is used and how exactly they can be combined.
             </p>
-            <div class="description-1 article">
+            <div class="description-1-article">
                 <p class="art-bold">
                     So, let's walk through the text of the CNIL decision
                 </p>
-                <p class="description article">
+                <p class="description-article">
                     Why France and not Ireland. Google operates in Europe through a legal entity in Ireland. But the
                     case was not initiated by the Irish, but by the French regulator. This is why it happened.
                     If data processing decisions are taken anywhere outside the EU, there is a one-stop mechanism -
                     where the complaint is received, the body considers it. Because Google's data processing center is
                     located in the United States and the complaint was first received in France, CNIL considered it.
                 </p>
-                <div class="divider"></div>
-                <div class="sm-icons">
-                    <a class="sm-icon">
-                        <button class="sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                fill="none">
-                                <g clip-path="url(#clip0_22724_9607)">
-                                    <path
-                                        d="M22.6755 0.890625H1.3245C0.5925 0.890625 0 1.48313 0 2.21513V23.5661C0 24.2981 0.5925 24.8906 1.3245 24.8906H12.819V15.5966H9.69V11.9756H12.819V9.30112C12.819 6.20212 14.712 4.51613 17.478 4.51613C18.8025 4.51613 19.941 4.61212 20.2725 4.65712V7.89713H18.3525C16.8525 7.89713 16.56 8.61712 16.56 9.66712V11.9771H20.145L19.68 15.6071H16.56V24.8906H22.6755C23.4075 24.8906 24 24.2981 24 23.5661V2.21513C24 1.48313 23.4075 0.890625 22.6755 0.890625Z"
-                                        fill="#435695" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_22724_9607">
-                                        <rect width="24" height="24" fill="white" transform="translate(0 0.890625)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
-                    </a>
-                    <a class="sm-icon">
-                        <button class="sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                fill="none">
-                                <path
-                                    d="M8.99997 18.832L7.49997 14.332L24 2.33203L0.932967 11.203C0.932967 11.203 -0.0750331 11.548 0.00446695 12.1855C0.0839669 12.823 0.907467 13.114 0.907467 13.114L6.26997 14.9185L8.69997 22.6495L12.813 19.033L12.8025 19.0255L18.213 23.1745C19.6725 23.812 20.2035 22.4845 20.2035 22.4845L24 2.33203L8.99997 18.832Z"
-                                    fill="#3CACDC" />
-                            </svg>
-                        </button>
-                    </a>
-                    <a class="sm-icon">
-                        <button class="sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
-                                fill="none">
-                                <g clip-path="url(#clip0_22724_9611)">
-                                    <path
-                                        d="M3.6 9.89062H7.2V21.2906H3.6V9.89062ZM5.4 4.19063C6.6 4.19063 7.5 5.09062 7.5 6.29062C7.35 7.34062 6.45 8.39062 5.4 8.39062C4.2 8.39062 3.3 7.34062 3.3 6.29062C3.3 5.09062 4.2 4.19063 5.4 4.19063ZM9.3 9.89062H12.75V11.3906C13.5 10.1906 14.85 9.59063 16.2 9.59063C19.8 9.59063 20.4 11.9906 20.4 14.9906V21.2906H16.8V15.7406C16.8 14.3906 16.8 12.7406 15 12.7406C13.2 12.7406 12.9 14.2406 12.9 15.7406V21.4406H9.3V9.89062ZM19.5 0.890625H4.5C1.5 0.890625 0 2.39062 0 5.39062V20.3906C0 23.3906 1.5 24.8906 4.5 24.8906H19.5C22.5 24.8906 24 23.3906 24 20.3906V5.39062C24 2.39062 22.5 0.890625 19.5 0.890625Z"
-                                        fill="#1178B3" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_22724_9611">
-                                        <rect width="24" height="24" fill="white" transform="translate(0 0.890625)" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </button>
-                    </a>
-                </div>
-            </div>
 
+            </div>
+            <div class="divider"></div>
+            <div class="sm-icons">
+                <a class="sm-icon">
+                    <div class="sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_22724_9607)">
+                                <path
+                                    d="M22.6755 0.890625H1.3245C0.5925 0.890625 0 1.48313 0 2.21513V23.5661C0 24.2981 0.5925 24.8906 1.3245 24.8906H12.819V15.5966H9.69V11.9756H12.819V9.30112C12.819 6.20212 14.712 4.51613 17.478 4.51613C18.8025 4.51613 19.941 4.61212 20.2725 4.65712V7.89713H18.3525C16.8525 7.89713 16.56 8.61712 16.56 9.66712V11.9771H20.145L19.68 15.6071H16.56V24.8906H22.6755C23.4075 24.8906 24 24.2981 24 23.5661V2.21513C24 1.48313 23.4075 0.890625 22.6755 0.890625Z"
+                                    fill="#435695" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_22724_9607">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.890625)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </a>
+                <a class="sm-icon">
+                    <div class="sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <path
+                                d="M8.99997 18.832L7.49997 14.332L24 2.33203L0.932967 11.203C0.932967 11.203 -0.0750331 11.548 0.00446695 12.1855C0.0839669 12.823 0.907467 13.114 0.907467 13.114L6.26997 14.9185L8.69997 22.6495L12.813 19.033L12.8025 19.0255L18.213 23.1745C19.6725 23.812 20.2035 22.4845 20.2035 22.4845L24 2.33203L8.99997 18.832Z"
+                                fill="#3CACDC" />
+                        </svg>
+                    </div>
+                </a>
+                <a class="sm-icon">
+                    <div class="sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                            <g clip-path="url(#clip0_22724_9611)">
+                                <path
+                                    d="M3.6 9.89062H7.2V21.2906H3.6V9.89062ZM5.4 4.19063C6.6 4.19063 7.5 5.09062 7.5 6.29062C7.35 7.34062 6.45 8.39062 5.4 8.39062C4.2 8.39062 3.3 7.34062 3.3 6.29062C3.3 5.09062 4.2 4.19063 5.4 4.19063ZM9.3 9.89062H12.75V11.3906C13.5 10.1906 14.85 9.59063 16.2 9.59063C19.8 9.59063 20.4 11.9906 20.4 14.9906V21.2906H16.8V15.7406C16.8 14.3906 16.8 12.7406 15 12.7406C13.2 12.7406 12.9 14.2406 12.9 15.7406V21.4406H9.3V9.89062ZM19.5 0.890625H4.5C1.5 0.890625 0 2.39062 0 5.39062V20.3906C0 23.3906 1.5 24.8906 4.5 24.8906H19.5C22.5 24.8906 24 23.3906 24 20.3906V5.39062C24 2.39062 22.5 0.890625 19.5 0.890625Z"
+                                    fill="#1178B3" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_22724_9611">
+                                    <rect width="24" height="24" fill="white" transform="translate(0 0.890625)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </a>
+            </div>
 
 
         </div>
 
-        </wrapper>
+
     </div>
-    <div class="spacer"></div>
     <section class="articles">
         <div class="wrapper">
             <div class="general">

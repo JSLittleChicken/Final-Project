@@ -31,7 +31,6 @@ div.options {
 .switch-container {
     display: flex;
     width: 200px;
-    // border: 2px solid;
     border-radius: 12px;
     overflow: hidden;
     position: relative;
@@ -59,13 +58,11 @@ div.options {
   
   .slider {
     position: absolute;
-    // top: 2px;
     left: 2px;
-    // bottom: 2px;
     right: 2px;
     width: calc(50% - 3px);
     height: calc(100% - 4px);
-    background-color: #fff;  // Slider color
+    background-color: #fff;
     border-radius: 10px;
     transition: all 0.3s ease;
     z-index: 0;
@@ -89,15 +86,6 @@ div.options {
     border-radius: 10px;
   }
 
-  // label.switch-label:not(:checked):hover {
-  //   background: #F5F5FA;
-  //   border-radius: 10px;
-  //   // position: relative;
-  //   // height: 105%;
-  //   // top: -1px;
-  //   // right: -1px;
-  // }
-
   button.more {
     padding: 18px 30px;
     border-radius: 12px;
@@ -108,17 +96,15 @@ div.options {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
-    margin: 30px auto;
+    margin: 30px auto 60px auto;
     display: block;
+    cursor: pointer;
   }
 
-  div.spacer {
-    width: 100%;
-    height: 60px;
-    display: none;
+  .spacer {
+    margin-bottom: 30px;
   }
 
   div.lang.articles a:hover:not(.selected) {
     background-color: #F5F5FA; 
-    // не применяется цвет ховера
   }

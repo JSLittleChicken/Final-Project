@@ -612,10 +612,6 @@ div.card img {
   overflow: hidden;
 }
 
-div.info > * {
-  margin-bottom: 15px;
-}
-
 time {
   color: #B3B3BA;
   font-size: 12px;
@@ -625,7 +621,6 @@ time {
 }
 
 div.divider {
-  margin-top: 15px;
   border-top: 4px solid #E6E6F0;
 }
 
@@ -634,6 +629,7 @@ div.info {
   background-color: white;
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 div.info a {
   color: #24A3FF;
@@ -777,11 +773,12 @@ nav.navigation > a.selected {
   position: fixed;
   width: 100%;
   height: 100%;
-}
-
-.mobile {
   z-index: 5;
   display: none;
+}
+
+.visible {
+  display: block;
 }
 
 button.hamburger {
@@ -809,6 +806,14 @@ button.hamburger:active {
   gap: 10px;
   border-radius: 12px;
   background: #F5F5FA;
+}
+
+.dropdown-content a:hover {
+  background: #E6E6F0;
+}
+
+.dropdown-content a.current-page {
+  color: #F0145A;
 }
 
 nav.dropdown-content {
@@ -1133,29 +1138,24 @@ button.more {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  margin: 30px auto;
+  margin: 30px auto 60px auto;
   display: block;
+  cursor: pointer;
 }
 
-div.spacer {
-  width: 100%;
-  height: 60px;
-  display: none;
+.spacer {
+  margin-bottom: 30px;
 }
 
 div.lang.articles a:hover:not(.selected) {
   background-color: #F5F5FA;
 }
 
-div.card.article {
+div.card-article {
   display: flex;
   flex-direction: column;
   gap: 30px;
-}
-
-div.spacer.pub {
-  display: block;
-  height: 30px;
+  margin-bottom: 60px;
 }
 
 div.info-entry {
@@ -1164,20 +1164,29 @@ div.info-entry {
   flex-direction: column;
 }
 
-p.ben-title.entry {
+p.ben-title-entry {
   color: #323264;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 0;
 }
 
-p.description.article {
+p.description-article {
   color: #000;
   font-size: 16px;
   margin: 0;
   font-weight: 400;
   line-height: 26px;
-  align-self: stretch;
 }
 
-div.description-1.article {
+.paragraph-spacer {
+  display: block;
+  height: 26px;
+}
+
+div.description-1-article {
   display: flex;
   gap: 15px;
   flex-direction: column;
@@ -1224,6 +1233,7 @@ div.article-picture {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  align-items: center;
 }
 
 p.article-picture-desc {
@@ -1232,6 +1242,7 @@ p.article-picture-desc {
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;
+  margin: 0;
 }
 
 div.sm-icons {
@@ -1239,15 +1250,20 @@ div.sm-icons {
   gap: 10px;
 }
 
-button.sm {
+div.sm {
   border-radius: 12px;
   background: #F5F5FA;
   padding: 9px;
   border: none;
 }
 
-div.spacer {
-  display: block;
+div.card-article img {
+  height: 300px;
+  width: 100%;
+}
+
+div.article-picture img {
+  height: 196px;
 }
 
 @font-face {
@@ -1301,11 +1317,15 @@ div.background::after {
   margin: auto;
 }
 
-div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path {
+div.social > a:hover > svg > g > path,
+div.foot-social > a:hover > svg > g > path {
   fill: #F0145A;
 }
 
 @media (min-width: 768px) {
+  div.background {
+    gap: 60px;
+  }
   section.top {
     padding: 0 60px;
   }
@@ -1491,7 +1511,8 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
   nav.navigation.articles > a.nav-link {
     color: #24A3FF;
   }
-  nav.navigation.articles > a.nav-link:hover, nav.navigation.articles > a.nav-link.selected:hover {
+  nav.navigation.articles > a.nav-link:hover,
+  nav.navigation.articles > a.nav-link.selected:hover {
     text-decoration: underline;
     text-underline-offset: 7px;
   }
@@ -1500,8 +1521,8 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
     text-decoration: underline;
     text-underline-offset: 7px;
   }
-  div.spacer {
-    display: block;
+  .spacer {
+    margin-bottom: 60px;
   }
   div.cards.articles {
     display: grid;
@@ -1516,8 +1537,18 @@ div.social > a:hover > svg > g > path, div.foot-social > a:hover > svg > g > pat
   div.logo p.logo-current-page {
     font-size: 36px;
   }
-  div.card.article source {
+  div.card-article img {
     height: 500px;
+  }
+  div.article-picture img {
+    height: 398px;
+    width: 640px;
+  }
+  h2.article {
+    font-size: 38px;
+  }
+  p.art-bold {
+    font-size: 22px;
   }
 }
 @media (min-width: 1024px) {

@@ -1,33 +1,38 @@
-div.card.article {
+div.card-article {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 60px;
 }
 
-div.spacer.pub {
-    display: block;
-    height: 30px;
-}
 div.info-entry {
     display: flex;
     gap: 15px;
     flex-direction: column;
 }
 
-p.ben-title.entry {
+p.ben-title-entry {
     color: #323264;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;    
 }
 
-p.description.article {
+p.description-article {
     color: #000;
     font-size: 16px;
     margin: 0;
     font-weight: 400;
     line-height: 26px;
-    align-self: stretch;
+}
+.paragraph-spacer {
+    display: block;
+    height: 26px;
 }
 
-div.description-1.article {
+div.description-1-article {
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -69,16 +74,13 @@ p.list-item-text {
 
 div.number {
     flex: 0 0 30px;
-    // display: flex;
-    // justify-content:right;
-    // flex-direction: column;
-
 }
 
 div.article-picture {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
 
 p.article-picture-desc {
@@ -87,6 +89,7 @@ p.article-picture-desc {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
+    margin: 0;
 }
 
 div.sm-icons {
@@ -94,13 +97,18 @@ div.sm-icons {
     gap: 10px;
 }
 
-button.sm {
+div.sm {
     border-radius: 12px;
     background: #F5F5FA;
     padding: 9px;
     border: none;
 }
 
-div.spacer {
-    display: block;
+div.card-article img {
+    height: 300px;
+    width: 100%;
+}
+
+div.article-picture img {
+    height: 196px;
 }
