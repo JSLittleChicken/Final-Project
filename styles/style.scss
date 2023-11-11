@@ -319,6 +319,14 @@ div.social> a:hover > svg > g > path, div.foot-social > a:hover > svg > g > path
        .last.card:last-child {
         grid-column: auto;
        }
+
+       div.logo svg.logo-slash {
+        height: 46px;
+       }
+
+       div.logo p.logo-current-page {
+        font-size: 36px;
+       }
     
 
 }

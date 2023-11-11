@@ -98,6 +98,12 @@
                         fill="white" />
                 </svg>
             </a>
+            <svg class="logo-slash" xmlns="http://www.w3.org/2000/svg" width="21" height="47" viewBox="0 0 21 47" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.1752 0H21L5.82482 47H0L15.1752 0Z" fill="#F0145A"/>
+            </svg>
+            <p class="logo-current-page">
+                publications
+            </p>
         </div>
         <!-- end logo -->
 
@@ -130,9 +136,20 @@
     <div class="wrapper">
         <div class="card article">
             <picture>
-                <source type="image/avif" srcset="images/articles/Cover.avif">
-                <source type="image/webp" srcset="images/articles/Cover.webp">
-                <img src="images/articles/Cover.jpg" alt="second-card-image">
+                <source type="image/avif" media="(max-width: 768px)" srcset="images/articles/Cover.avif">
+                <source type="image/webp" media="(max-width: 768px)" srcset="images/articles/Cover.webp">
+                <source media="(max-width: 768px)" srcset="images/articles/Cover.jpg">
+                <source type="image/avif" media="(min-width: 768px)" srcset="images/article/gdpr_768.avif">
+                <source type="image/webp" media="(min-width: 768px)" srcset="images/article/gdpr_768.webp">
+                <source media="(min-width: 768px)" srcset="images/articles/gdpr_768.jpg">
+                <source type="image/avif" media="(min-width: 1024px)" srcset="images/article/gdpr_1024.avif">
+                <source type="image/webp" media="(min-width: 1024px)" srcset="images/article/gdpr_1024.webp">
+                <source media="(min-width: 1920px)" srcset="images/articles/gdpr_1024.jpg">
+                <source type="image/avif" media="(min-width: 1920px)" srcset="images/article/gdpr_1920.avif">
+                <source type="image/webp" media="(min-width: 1920px)" srcset="images/article/gdpr_1920.webp">
+                <source media="(min-width: 1920px)" srcset="images/articles/gdpr_1920.jpg">
+                <img src="images/articles/Cover.jpg" alt="gdpr-image">
+
             </picture>
             <div class="info-entry">
                 <p class="ben-title entry">Penalty for the Good Corporation: what will happen to Google and others
